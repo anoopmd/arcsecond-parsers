@@ -67,10 +67,11 @@ const run = (parser, targetString) => {
   return parser(initialState);
 };
 
-// const parser = sequenceOf([
-//   str('hello there!'),
-//   str('goodbye there!')
-// ]);
-const parser = str('hello there!');
+const parser = sequenceOf([
+  str('hello there!'),
+  str('goodbye there!')
+]);
+console.log(run(parser, 'hello there!goodbye there!'));
 
-console.log(run(parser, ''));
+// const parser = str('hello there!');
+// console.log(run(parser, ''));

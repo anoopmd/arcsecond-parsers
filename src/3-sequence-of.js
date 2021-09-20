@@ -46,4 +46,3 @@ const parser = sequenceOf([
 ]);
 
 console.log(run(parser, 'hello there!goodbye there!'));
-// run(parser, 'this is not correct');

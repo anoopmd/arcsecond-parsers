@@ -28,4 +28,4 @@ const run = (parser, targetString) => {
 const parser = str('hello there!');
 
 console.log(run(parser, 'hello there!'));
-// run(parser, 'this is not correct');
+console.log(run(parser, 'this is not correct'));
